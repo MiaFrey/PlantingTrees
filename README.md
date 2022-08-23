@@ -43,6 +43,65 @@ In the following grid, each scenario and its predicted plots are depicted. The c
 Figure 1: Graphs with different scenarios
 ```
 
+Our approach is purely data-driven since we replicated the model of Mesnage and Vlachos to be able to control parameters, like the reduction of CO2 emissions, the sequestration potential of trees, and its speed. The aim is to better understand the relationship between these parameters but we had to take many assumptions in order to model the relations. First, we assumed a causal relationship such that a decrease in CO2 levels leads to a decline of the GAT. In reality, we know that a correlation exists but the causality is still debated. Further, many other factors are in play when planting trees, like the albedo and water cycle change modeled later on in this notebook. We also assumed that the ocean's capacity to absorb CO2 stays constant.
+
+Our findings are that fossil-fuel energy production needs to decrease to at least 10% and trees substantially help to reach the goals of the Paris agreement. Thus, the main takeaway is that the climate economy should protect existing forests, and reforestation, as well as afforestation, are important to tackle climate change. These efforts should then be combined with energy transformation to have an average temperature increase of less than 1.5\[Degree]C.
+
+## Task B: Model and predict the GAT if we additionally consider the change in albedo in the Sahara
+
+We would like to answer questions such as:
+It will become less reflective, by how much?
+How much more solar radiation will be absorbed?
+What is the impact on GAT?
+etc
+
+There are many other factors involved when planting trees. The albedo adjustment caused by the change of surface induces a temperature variation because when the trees are grown the land surface becomes darker compared to having ice or sand and hence absorbs more light and heat. It is important to note that (de-)forestation plays a different role at different latitudes and it would be interesting to include this in future studies (Davin et al, 2010).
+
+First of all, we want to know the area of the surface needed to plant 1 trillion trees to then compare it to the surface of the Sahara. From the paper of Rotenberg and  Yakir, we find that they can plant 300 trees in one hectare (Rotenberg & Yakir, 2011). Thus, we can find the surface of one tree and then multiply it by a trillion trees.
+
+The Sahara is 3.66 times smaller than the surface needed to plant 1 trillion trees! Therefore, we look at different projects planning to plant a big amount of trees and which areas they mention in their text.
+
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/110820736/186137012-2eb43985-8c24-4d5c-b0f4-f3a1c066c313.png" width="600">
+</p>
+
+```
+Figure 2: Areas with iniatives to plant trees raphs with different scenarios
+```
+
+In the World Cloud, we observe that initiatives to plant trees are active in diverse areas. The focus lies especially on India and the United States. In the following part, we continue with the assumption that the trillion trees are planted in deserts like the Sahara. This is crucial because the albedo of the desert is different than in other regions.
+
+To calculate the influence of planting trees on the worldwide albedo, we use the current albedo of the earth, the Sahara, and a forest. This way we can calculate the change of albedo linked to the plantation of trees (Goosse, 2010). We also calculate the affected percentual surface of the earth. We train a predictor to calculate the temperature increase due to the albedo change based on a dataset (Parker).
+
+We use the following formula :
+Albedo_earth_now = Surface_stable_albedo * Albedo_stable + Surface_changing_albedo * Albedo_changing_before
+
+Then we calculate the albedo that stays stable, which is not influenced by the trees planted.  Afterward, we can determine the new albedo including the trillion new trees and we can find the change of albedo.
+
+We implemented a first-order linear time-invariant system to simulate a gradual increase in temperature. Trees absorb CO2 at different rates, hence the type of tree matters. Mangroves, oaks, and chestnuts are good candidates, but one should keep in mind that species need to be planted according to their local climate (Mesnage and Vlachos, 2020). An Oak normally takes 40 years to grow large (Local Tree Estimates, n/a) and a Mangrove 15 (Deibus, 2020).
+Thus, for the time constant (TC) we decided to take the average of the two. Additionally, we assume that after four times the TC, the tree is fully grown. This stems from an analogy often used in engineering, the so-called electrical RC circuit (cf. the image below). It assumes that after 1 TC (on the picture RC) the result is around 66% and after 4 TC it almost reached 100%. This is in our eyes a realistic approximation that represents an increase of temperature as the albedo reacts quickly to it and seen from above, a tree's surface grows fast in the beginning and then less with time. But we would like to note that it would be necessary to verify this development in further analysis.
+
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/110820736/186137775-7de9df48-0d98-491e-a090-5603ddbb5f2f.png" width="600">
+</p>
+
+```
+Figure 3: Analogy made with an electrical RC circuit
+```
+
+In the following grid, each scenario and its predicted plots are depicted. It is the same as before but now also includes the impact of the albedo change, shown with the new violet curve called "Temperature predictions w/ Albedo".
+
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/110820736/186138529-78fd928e-3ae2-48fa-9b00-ef09433e4b1c.png" width="1000">
+</p>
+
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/110820736/186138599-a40c8577-89f7-4a6e-a2cc-87d4f704c6d2.png" width="1000">
+</p>
+
+```
+Figure 4: Graphs with different scenarios + Albedo
+```
 
 
 
