@@ -25,8 +25,11 @@ The three main scenarios are:
 4. Best rate, decrease emissions to 10%
 
 For each of these scenarios, we model what would happen if:
+
 a. We do not plant any trees and assume that the number of trees worldwide remains constant.
+
 b. We plant a trillion trees and assume that they sequestrate 42 GtC.
+
 c. We plant a trillion trees and assume that they sequestrate 107 GtC.
 
 In the following grid, each scenario and its predicted plots are depicted. The columns represent no trees, trees that sequestrate 42GtC and 107GtC. The rows represent the scenarios, namely business as usual, decrease to 69%, zero-carbon and decrease to 10%.
@@ -45,7 +48,7 @@ Figure 1: Graphs with different scenarios
 
 Our approach is purely data-driven since we replicated the model of Mesnage and Vlachos to be able to control parameters, like the reduction of CO2 emissions, the sequestration potential of trees, and its speed. The aim is to better understand the relationship between these parameters but we had to take many assumptions in order to model the relations. First, we assumed a causal relationship such that a decrease in CO2 levels leads to a decline of the GAT. In reality, we know that a correlation exists but the causality is still debated. Further, many other factors are in play when planting trees, like the albedo and water cycle change modeled later on in this notebook. We also assumed that the ocean's capacity to absorb CO2 stays constant.
 
-Our findings are that fossil-fuel energy production needs to decrease to at least 10% and trees substantially help to reach the goals of the Paris agreement. Thus, the main takeaway is that the climate economy should protect existing forests, and reforestation, as well as afforestation, are important to tackle climate change. These efforts should then be combined with energy transformation to have an average temperature increase of less than 1.5\[Degree]C.
+Our findings are that fossil-fuel energy production needs to decrease to at least 10% and trees substantially help to reach the goals of the Paris agreement. Thus, the main takeaway is that the climate economy should protect existing forests, and reforestation, as well as afforestation, are important to tackle climate change. These efforts should then be combined with energy transformation to have an average temperature increase of less than 1.5 Degree Celsius.
 
 ## Task B: Model and predict the GAT if we additionally consider the change in albedo in the Sahara
 
