@@ -14,6 +14,38 @@ In this report, we estimate the impact of this mitigation strategy with the help
     <img src="https://user-images.githubusercontent.com/110820736/186128378-0dceb679-de76-486a-b657-23cee8f8e964.png" width="600">
 </p>
 
+## Task A: Model and predict the GAT based on updated CO2 emissions if we plant 1 trillion trees.
+
+In this part, we will model and predict the GAT. The aim is to find the impact of panting 1 trillion trees on CO2 sequestration. We examine different scenarios to determine if planting a trillion trees is a viable solution to tackle climate change. We would like to note that we are aware of the controversy of this topic but we aim to understand the situation and predict GAT based on these different scenarios.
+
+The three main scenarios are:
+1. Business as usual, meaning a continuous increase of emissions
+2. Realistic decrease of emissions to 69%
+3. Net-zero by 2050
+4. Best rate, decrease emissions to 10%
+
+For each of these scenarios, we model what would happen if:
+a. We do not plant any trees and assume that the number of trees worldwide remains constant.
+b. We plant a trillion trees and assume that they sequestrate 42 GtC.
+c. We plant a trillion trees and assume that they sequestrate 107 GtC.
+
+In the following grid, each scenario and its predicted plots are depicted. The columns represent no trees, trees that sequestrate 42GtC and 107GtC. The rows represent the scenarios, namely business as usual, decrease to 69%, zero-carbon and decrease to 10%.
+
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/110820736/186135110-e67170cc-9f64-41f0-a7ff-b42b46336c02.png" width="1000">
+</p>
+
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/110820736/186135205-7e272c68-4dca-4229-89d2-a4514c6b708e.png" width="1000">
+</p>
+
+```
+Figure 1: Graphs with different scenarios
+```
+
+
+
+
 ## Policy Recommendation
 
 Regarding policy recommendations, we have to be careful. First let's be clear: planting a million trees won't solve the climate crisis. The priority has to be to change our habits in consuming and using energy. We need to stop the growth that has been going on for many decades and start considering other narratives. However, we will need to use technology to help us doing so combined with a cultural change on how we consume and treat nature. One technical aspect on how we can reduce our CO2 emissions are carbon dioxide removal techniques, which could definitely help us to mitigate climate change. Similarly, planting trees is a good thing. It can only be positive as it helps cleaning the air and reduces the global average temperatures. But in this study, we found that even with a trillion trees planted, the sufficiency to reach the Paris Agreement strongly depends on the emission scenario in question.
@@ -26,7 +58,7 @@ It would also be helpful to analyze where trees can be grown efficiently and try
 
 ## Video
 
-YOu can find a video describing the link and the project here: https://www.youtube.com/watch?v=B9EKW5d_tv0
+You can find a video describing the link and the project here: https://www.youtube.com/watch?v=B9EKW5d_tv0
 
 
 # Collaborators
