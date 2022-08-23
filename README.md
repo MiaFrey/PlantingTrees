@@ -62,7 +62,7 @@ First of all, we want to know the area of the surface needed to plant 1 trillion
 The Sahara is 3.66 times smaller than the surface needed to plant 1 trillion trees! Therefore, we look at different projects planning to plant a big amount of trees and which areas they mention in their text.
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/110820736/186137012-2eb43985-8c24-4d5c-b0f4-f3a1c066c313.png" width="600">
+    <img src="https://user-images.githubusercontent.com/110820736/186137012-2eb43985-8c24-4d5c-b0f4-f3a1c066c313.png" width="400">
 </p>
 
 ```
@@ -74,6 +74,7 @@ In the World Cloud, we observe that initiatives to plant trees are active in div
 To calculate the influence of planting trees on the worldwide albedo, we use the current albedo of the earth, the Sahara, and a forest. This way we can calculate the change of albedo linked to the plantation of trees (Goosse, 2010). We also calculate the affected percentual surface of the earth. We train a predictor to calculate the temperature increase due to the albedo change based on a dataset (Parker).
 
 We use the following formula :
+
 Albedo_earth_now = Surface_stable_albedo * Albedo_stable + Surface_changing_albedo * Albedo_changing_before
 
 Then we calculate the albedo that stays stable, which is not influenced by the trees planted.  Afterward, we can determine the new albedo including the trillion new trees and we can find the change of albedo.
@@ -103,7 +104,27 @@ In the following grid, each scenario and its predicted plots are depicted. It is
 Figure 4: Graphs with different scenarios + Albedo
 ```
 
+## Task C:  Model and predict the GAT if you also consider the water cycle changes.
 
+After a lot of literature research, we decided to focus on the impact of clouds on the GAT. Their presence is directly linked to the water cycle. As more trees are planted, there is more evaporation and thus more clouds (Schmale, 2021). Here we look a the impact of their albedo on our prediction by reusing the function of  Task B.
+
+For low albedo values, the presence of clouds roughly doubles the original albedo (Genyuk, 2013). The deciduous forest mean from before was 0.175, thus with clouds, the final albedo is 2 * 0.175 = 0.35.
+
+In these plots the temperature prediction w/ Albedo refers only to the albedo change with and without clouds over the forest.
+
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/110820736/186139294-7a18679a-3bd2-4b42-92cc-45c4d2c3270f.png" width="1000">
+</p>
+
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/110820736/186139429-ee871281-1465-4718-95d9-d67158f071a7.png" width="1000">
+</p>
+
+```
+Figure 5: Graphs with different scenarios + Albedo + Cloud Coverage
+```
+
+We observe that the immediate effect of cloud coverage on the Sahara desert has in the beginning a big negative effect and then becomes parallel to the initial trend with time. This is due to our assumptions like the first-order linear time-invariant system to simulate a gradual decrease in temperature.
 
 ## Policy Recommendation
 
