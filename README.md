@@ -86,7 +86,7 @@ We implemented a first-order linear time-invariant system to simulate a gradual 
 Thus, for the time constant (TC) we decided to take the average of the two. Additionally, we assume that after four times the TC, the tree is fully grown. This stems from an analogy often used in engineering, the so-called electrical RC circuit (Figure 3). It assumes that after 1 TC (on the picture RC) the result is around 66% and after 4 TC it almost reached 100%. This is in our eyes a realistic approximation that represents an increase of temperature as the albedo reacts quickly to it and seen from above, a tree's surface grows fast in the beginning and then less with time. But we would like to note that it would be necessary to verify this development in further analysis.
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/110820736/186137775-7de9df48-0d98-491e-a090-5603ddbb5f2f.png" width="600">
+    <img src="https://user-images.githubusercontent.com/110820736/186344623-1c5ae579-cc2b-4562-a338-7f45a2a6627e.png" width="600">
 </p>
 
 ```
